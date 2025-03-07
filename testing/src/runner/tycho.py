@@ -71,6 +71,8 @@ class TychoRunner:
             process = subprocess.Popen(
                 [
                     binary_path,
+                    "--endpoint",
+                    "https://sepolia.eth.streamingfast.io:443",
                     "--database-url",
                     self._db_url,
                     "run",
